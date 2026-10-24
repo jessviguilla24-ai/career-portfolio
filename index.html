@@ -1,0 +1,1610 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f4">
+  <meta name="description" content="Explore system administration career pathways, job responsibilities, essential skills, and practical tools for building an IT career.">
+  <title>Career Pathways | System Administration</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f7f8f4;
+      --surface: #ffffff;
+      --ink: #17231f;
+      --muted: #66716b;
+      --line: #e4e8e1;
+      --green: #176b51;
+      --green-dark: #104c3b;
+      --green-soft: #e6f1eb;
+      --lime: #c8ef78;
+      --sand: #f0eee4;
+      --shadow: 0 22px 60px rgba(20, 43, 34, .08);
+      --radius: 22px;
+      --content: 1160px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 88px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #74a62e;
+      outline-offset: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 20;
+      transform: translateY(-160%);
+      border-radius: 8px;
+      background: var(--ink);
+      color: #fff;
+      padding: 10px 14px;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .container {
+      width: min(var(--content), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid rgba(228, 232, 225, .86);
+      background: rgba(247, 248, 244, .92);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav-shell {
+      display: flex;
+      min-height: 76px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--ink);
+      font-size: .97rem;
+      font-weight: 760;
+      letter-spacing: -.035em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 37px;
+      height: 37px;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--green);
+      color: white;
+    }
+
+    .brand-mark svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .nav-links a {
+      color: #53615a;
+      font-size: .86rem;
+      font-weight: 570;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--green);
+    }
+
+    .nav-links .nav-cta {
+      border-radius: 999px;
+      background: var(--ink);
+      color: white;
+      padding: 10px 17px;
+    }
+
+    .nav-links .nav-cta:hover {
+      background: var(--green);
+      color: white;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: var(--surface);
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    .menu-toggle svg {
+      width: 21px;
+      height: 21px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 76px 0 84px;
+    }
+
+    .hero::before {
+      position: absolute;
+      top: -218px;
+      right: -145px;
+      width: 660px;
+      height: 660px;
+      border: 1px solid rgba(23, 107, 81, .10);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero::after {
+      position: absolute;
+      top: -137px;
+      right: -64px;
+      width: 495px;
+      height: 495px;
+      border: 1px solid rgba(23, 107, 81, .10);
+      border-radius: 50%;
+      content: "";
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 64px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 21px;
+      color: var(--green);
+      font-size: .75rem;
+      font-weight: 760;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 22px;
+      height: 2px;
+      background: var(--green);
+      content: "";
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 690px;
+      margin-bottom: 23px;
+      font-size: clamp(3.1rem, 6.8vw, 5.65rem);
+      font-weight: 680;
+      letter-spacing: -.075em;
+      line-height: .99;
+    }
+
+    h1 span {
+      color: var(--green);
+    }
+
+    .hero-copy {
+      max-width: 565px;
+      margin-bottom: 30px;
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 49px;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 0 20px;
+      font-size: .9rem;
+      font-weight: 690;
+      text-decoration: none;
+      transition: transform .2s ease, background .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--green);
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: var(--green-dark);
+    }
+
+    .button-secondary {
+      border-color: var(--line);
+      background: transparent;
+      color: var(--ink);
+    }
+
+    .button svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 394px;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 29px;
+      background: #173e32;
+      box-shadow: var(--shadow);
+      color: white;
+      isolation: isolate;
+      overflow: hidden;
+    }
+
+    .hero-visual::before {
+      position: absolute;
+      z-index: -1;
+      right: -70px;
+      bottom: -205px;
+      width: 470px;
+      height: 470px;
+      border: 1px solid rgba(200, 239, 120, .25);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .hero-visual::after {
+      position: absolute;
+      z-index: -1;
+      right: -19px;
+      bottom: -157px;
+      width: 370px;
+      height: 370px;
+      border: 1px solid rgba(200, 239, 120, .22);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .visual-topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 26px 0;
+      color: #c6d6cd;
+      font-size: .77rem;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--lime);
+      box-shadow: 0 0 14px rgba(200, 239, 120, .85);
+    }
+
+    .terminal {
+      margin: 39px 26px 0;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 15px;
+      background: rgba(9, 29, 23, .66);
+      padding: 19px 20px 20px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: .78rem;
+    }
+
+    .terminal-bar {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 22px;
+    }
+
+    .terminal-bar span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #6e8278;
+    }
+
+    .terminal-line {
+      margin: 0 0 12px;
+      color: #cad8d0;
+    }
+
+    .terminal-line:last-child {
+      margin-bottom: 0;
+    }
+
+    .terminal-line b {
+      color: var(--lime);
+      font-weight: 500;
+    }
+
+    .terminal-line em {
+      color: #87c7ab;
+      font-style: normal;
+    }
+
+    .visual-caption {
+      position: absolute;
+      right: 26px;
+      bottom: 20px;
+      left: 26px;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .visual-caption strong {
+      display: block;
+      font-size: .91rem;
+      font-weight: 650;
+    }
+
+    .visual-caption span {
+      color: #c6d6cd;
+      font-size: .75rem;
+    }
+
+    .caption-icon {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      flex: 0 0 auto;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--lime);
+      color: var(--green-dark);
+    }
+
+    .caption-icon svg {
+      width: 21px;
+      height: 21px;
+    }
+
+    .quick-facts {
+      border-block: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .fact {
+      min-height: 91px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 25px;
+    }
+
+    .fact + .fact {
+      border-left: 1px solid var(--line);
+    }
+
+    .fact-number {
+      color: var(--green);
+      font-size: 1.45rem;
+      font-weight: 720;
+      letter-spacing: -.06em;
+    }
+
+    .fact-label {
+      color: var(--muted);
+      font-size: .79rem;
+      line-height: 1.4;
+    }
+
+    .section {
+      padding: 98px 0;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 28px;
+      margin-bottom: 38px;
+    }
+
+    .section-heading {
+      max-width: 630px;
+      margin-bottom: 0;
+      font-size: clamp(2.1rem, 4.4vw, 3.3rem);
+      font-weight: 660;
+      letter-spacing: -.065em;
+      line-height: 1.08;
+    }
+
+    .section-heading span {
+      color: var(--green);
+    }
+
+    .section-description {
+      max-width: 390px;
+      margin: 0 0 2px;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .pathway-section {
+      background: var(--paper);
+    }
+
+    .pathway-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 17px;
+    }
+
+    .path-card {
+      position: relative;
+      display: flex;
+      min-height: 388px;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      padding: 26px 25px 23px;
+      box-shadow: 0 8px 24px rgba(20, 43, 34, .025);
+    }
+
+    .path-card:not(:last-child)::after {
+      position: absolute;
+      z-index: 2;
+      top: 34px;
+      right: -26px;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: var(--paper);
+      color: var(--green);
+      content: "→";
+      font-size: 1rem;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    .path-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .level-label {
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      padding: 6px 10px;
+      font-size: .69rem;
+      font-weight: 740;
+      letter-spacing: .075em;
+      text-transform: uppercase;
+    }
+
+    .level-label.intermediate {
+      background: #f5efdc;
+      color: #7b601c;
+    }
+
+    .level-label.advanced {
+      background: #ede9f5;
+      color: #634d86;
+    }
+
+    .step {
+      color: #8b958e;
+      font-size: .75rem;
+      font-weight: 650;
+    }
+
+    .path-card h3 {
+      margin-bottom: 9px;
+      font-size: 1.34rem;
+      font-weight: 680;
+      letter-spacing: -.045em;
+      line-height: 1.2;
+    }
+
+    .role-alternate {
+      min-height: 22px;
+      margin-bottom: 14px;
+      color: var(--green);
+      font-size: .78rem;
+      font-weight: 620;
+    }
+
+    .path-card > p:not(.role-alternate) {
+      margin-bottom: 19px;
+      color: var(--muted);
+      font-size: .85rem;
+      line-height: 1.7;
+    }
+
+    .card-label {
+      margin-bottom: 8px;
+      color: #77827b;
+      font-size: .68rem;
+      font-weight: 740;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .path-card ul {
+      display: grid;
+      gap: 7px;
+      margin: 0 0 19px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .path-card li {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      color: #48564e;
+      font-size: .78rem;
+      line-height: 1.5;
+    }
+
+    .path-card li::before {
+      width: 5px;
+      height: 5px;
+      flex: 0 0 auto;
+      margin-top: 7px;
+      border-radius: 50%;
+      background: #7eaa77;
+      content: "";
+    }
+
+    .path-footer {
+      margin-top: auto;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      color: #69756e;
+      font-size: .76rem;
+      line-height: 1.6;
+    }
+
+    .dark-section {
+      background: #173e32;
+      color: white;
+    }
+
+    .dark-section .eyebrow {
+      color: var(--lime);
+    }
+
+    .dark-section .eyebrow::before {
+      background: var(--lime);
+    }
+
+    .dark-section .section-heading span {
+      color: var(--lime);
+    }
+
+    .dark-section .section-description {
+      color: #c2d1c9;
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .skill-card {
+      min-height: 219px;
+      border: 1px solid rgba(255, 255, 255, .13);
+      border-radius: 17px;
+      background: rgba(255, 255, 255, .055);
+      padding: 19px 17px;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, .095);
+    }
+
+    .skill-icon {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      margin-bottom: 19px;
+      border-radius: 12px;
+      background: rgba(200, 239, 120, .13);
+      color: var(--lime);
+      font-size: 1.03rem;
+      font-weight: 740;
+    }
+
+    .skill-card h3 {
+      margin-bottom: 8px;
+      font-size: .91rem;
+      font-weight: 660;
+      letter-spacing: -.025em;
+    }
+
+    .skill-card p {
+      margin-bottom: 0;
+      color: #c2d1c9;
+      font-size: .77rem;
+      line-height: 1.65;
+    }
+
+    .roles-section {
+      background: #fff;
+    }
+
+    .role-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: white;
+      box-shadow: 0 10px 30px rgba(20, 43, 34, .035);
+    }
+
+    .role-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .role-table th,
+    .role-table td {
+      min-width: 178px;
+      padding: 19px 21px;
+      vertical-align: top;
+    }
+
+    .role-table th {
+      background: #f5f7f2;
+      color: #627067;
+      font-size: .71rem;
+      font-weight: 730;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .role-table td {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.65;
+    }
+
+    .role-table td:first-child {
+      color: var(--ink);
+      font-weight: 670;
+    }
+
+    .role-table tbody tr:hover {
+      background: #fbfcf9;
+    }
+
+    .tools-section {
+      background: var(--paper);
+    }
+
+    .tools-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 23px;
+    }
+
+    .tool-panel {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: white;
+      padding: 25px;
+    }
+
+    .panel-heading {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 21px;
+    }
+
+    .panel-heading-icon {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--green-soft);
+      color: var(--green);
+      font-size: 1rem;
+      font-weight: 760;
+    }
+
+    .panel-heading h3 {
+      margin-bottom: 0;
+      font-size: 1.08rem;
+      font-weight: 680;
+      letter-spacing: -.03em;
+    }
+
+    .list-items {
+      display: grid;
+      gap: 0;
+    }
+
+    .list-item {
+      display: flex;
+      gap: 14px;
+      border-top: 1px solid var(--line);
+      padding: 15px 0;
+    }
+
+    .list-item:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .list-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .list-number {
+      width: 26px;
+      flex: 0 0 auto;
+      color: var(--green);
+      font-size: .75rem;
+      font-weight: 740;
+      padding-top: 2px;
+    }
+
+    .list-item h4 {
+      margin-bottom: 3px;
+      font-size: .86rem;
+      font-weight: 680;
+    }
+
+    .list-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: .78rem;
+      line-height: 1.6;
+    }
+
+    .resource-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: rgba(255, 255, 255, .58);
+      padding: 14px 17px;
+    }
+
+    .resource-strip strong {
+      margin-right: 4px;
+      font-size: .78rem;
+    }
+
+    .resource-strip a {
+      color: var(--green);
+      font-size: .77rem;
+      font-weight: 630;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .about-section {
+      padding: 76px 0;
+      background: var(--sand);
+    }
+
+    .about-card {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 56px;
+      align-items: center;
+      border: 1px solid rgba(23, 35, 31, .08);
+      border-radius: 26px;
+      background: rgba(255, 255, 255, .74);
+      padding: 37px;
+    }
+
+    .about-heading {
+      margin-bottom: 13px;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 670;
+      letter-spacing: -.065em;
+      line-height: 1.08;
+    }
+
+    .about-intro {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .about-details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px 22px;
+    }
+
+    .about-detail {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+
+    .about-detail span {
+      display: block;
+      margin-bottom: 4px;
+      color: #738077;
+      font-size: .68rem;
+      font-weight: 730;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .about-detail strong {
+      font-size: .87rem;
+      font-weight: 650;
+    }
+
+    .footer {
+      background: #173e32;
+      color: white;
+      padding: 25px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer .brand {
+      color: white;
+      font-size: .88rem;
+    }
+
+    .footer .brand-mark {
+      width: 31px;
+      height: 31px;
+      border-radius: 10px;
+      background: rgba(200, 239, 120, .16);
+      color: var(--lime);
+    }
+
+    .footer .brand-mark svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .footer p {
+      margin: 0;
+      color: #c2d1c9;
+      font-size: .75rem;
+    }
+
+    @media (max-width: 960px) {
+      .hero-grid {
+        gap: 38px;
+      }
+
+      .hero-visual {
+        min-height: 370px;
+      }
+
+      .skill-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .skill-card {
+        min-height: 190px;
+      }
+
+      .role-table th,
+      .role-table td {
+        padding-inline: 16px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      html {
+        scroll-padding-top: 76px;
+      }
+
+      .container {
+        width: min(var(--content), calc(100% - 36px));
+      }
+
+      .nav-shell {
+        min-height: 68px;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: calc(100% + 1px);
+        right: 0;
+        left: 0;
+        display: none;
+        align-items: stretch;
+        gap: 0;
+        border-bottom: 1px solid var(--line);
+        background: var(--paper);
+        padding: 7px 18px 16px;
+      }
+
+      .nav-links.is-open {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .nav-links a {
+        border-bottom: 1px solid var(--line);
+        padding: 13px 2px;
+        font-size: .9rem;
+      }
+
+      .nav-links .nav-cta {
+        align-self: flex-start;
+        margin-top: 12px;
+        border: 0;
+        padding: 10px 17px;
+      }
+
+      .hero {
+        padding: 58px 0 60px;
+      }
+
+      .hero::before {
+        top: 140px;
+        right: -360px;
+      }
+
+      .hero::after {
+        top: 180px;
+        right: -320px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      h1 {
+        max-width: 580px;
+        font-size: clamp(3.1rem, 11.5vw, 4.8rem);
+      }
+
+      .hero-copy {
+        font-size: 1rem;
+      }
+
+      .hero-visual {
+        min-height: 355px;
+      }
+
+      .facts-grid {
+        grid-template-columns: 1fr;
+        padding-block: 7px;
+      }
+
+      .fact {
+        min-height: 72px;
+        padding-inline: 8px;
+      }
+
+      .fact + .fact {
+        border-top: 1px solid var(--line);
+        border-left: 0;
+      }
+
+      .section {
+        padding: 73px 0;
+      }
+
+      .section-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 28px;
+      }
+
+      .pathway-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .path-card {
+        min-height: auto;
+      }
+
+      .path-card:not(:last-child)::after {
+        top: auto;
+        right: 24px;
+        bottom: -25px;
+        transform: rotate(90deg);
+      }
+
+      .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .skill-card {
+        min-height: 200px;
+        padding: 16px 14px;
+      }
+
+      .skill-card:last-child {
+        grid-column: 1 / -1;
+        min-height: 160px;
+      }
+
+      .role-table-wrap {
+        margin-right: -18px;
+        border-radius: 18px 0 0 18px;
+      }
+
+      .role-table {
+        min-width: 740px;
+      }
+
+      .tools-layout {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .tool-panel {
+        padding: 20px;
+      }
+
+      .resource-strip {
+        align-items: flex-start;
+      }
+
+      .resource-strip strong {
+        width: 100%;
+      }
+
+      .about-section {
+        padding: 58px 0;
+      }
+
+      .about-card {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        padding: 25px 21px;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .container {
+        width: calc(100% - 28px);
+      }
+
+      .brand {
+        font-size: .88rem;
+      }
+
+      .skill-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skill-card,
+      .skill-card:last-child {
+        min-height: auto;
+      }
+
+      .about-details {
+        grid-template-columns: 1fr;
+      }
+
+      .terminal {
+        margin-inline: 16px;
+        padding-inline: 14px;
+        font-size: .7rem;
+      }
+
+      .visual-topline {
+        padding-inline: 17px;
+      }
+
+      .visual-caption {
+        right: 17px;
+        left: 17px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#home" aria-label="Career Pathways home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3.5" y="4.5" width="17" height="6" rx="1.8"></rect>
+            <rect x="3.5" y="13.5" width="17" height="6" rx="1.8"></rect>
+            <path d="M7.5 7.5h.01M7.5 16.5h.01M11 7.5h6M11 16.5h6"></path>
+          </svg>
+        </span>
+        Career Pathways
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
+      <nav class="nav-links" id="site-navigation" aria-label="Main navigation">
+        <a href="#pathway">Career path</a>
+        <a href="#skills">Skills</a>
+        <a href="#roles">Job roles</a>
+        <a href="#tools">Tools</a>
+        <a class="nav-cta" href="#about">About the developer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">A guide to your next chapter</p>
+          <h1>Build a career that <span>keeps systems moving.</span></h1>
+          <p class="hero-copy">From your first support ticket to designing resilient infrastructure, system administration offers a practical path to a career in the technology that powers everyday life.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#pathway">
+              Explore the career path
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+            <a class="button button-secondary" href="#skills">See what you’ll learn</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="A terminal illustration showing a healthy server and secure network">
+          <div class="visual-topline">
+            <span>INFRASTRUCTURE / OVERVIEW</span>
+            <span class="status"><span class="status-dot"></span>All systems normal</span>
+          </div>
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal-bar"><span></span><span></span><span></span></div>
+            <p class="terminal-line"><b>admin@workstation</b>:~$ systemctl status network</p>
+            <p class="terminal-line"><em>●</em> network.service — Network Manager</p>
+            <p class="terminal-line">&nbsp;&nbsp;Loaded: loaded; enabled</p>
+            <p class="terminal-line">&nbsp;&nbsp;Active: <em>active (running)</em></p>
+            <p class="terminal-line"><b>admin@workstation</b>:~$ _</p>
+          </div>
+          <div class="visual-caption">
+            <div>
+              <strong>Reliable. Secure. Always evolving.</strong>
+              <span>The work behind every connected day.</span>
+            </div>
+            <span class="caption-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3 5 6v5c0 4.7 2.9 8 7 10 4.1-2 7-5.3 7-10V6l-7-3Z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-facts" aria-label="Career overview">
+      <div class="container facts-grid">
+        <div class="fact">
+          <span class="fact-number">01 — 03</span>
+          <span class="fact-label">Career stages, from<br>first role to leadership</span>
+        </div>
+        <div class="fact">
+          <span class="fact-number">People + systems</span>
+          <span class="fact-label">Technical know-how meets<br>everyday problem-solving</span>
+        </div>
+        <div class="fact">
+          <span class="fact-number">Always learning</span>
+          <span class="fact-label">Skills grow with new tools,<br>teams, and technology</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pathway-section" id="pathway">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Your career map</p>
+            <h2 class="section-heading">A path built one <span>step at a time.</span></h2>
+          </div>
+          <p class="section-description">There isn’t just one route into systems work. Build hands-on experience, deepen your technical skills, and follow the direction that interests you.</p>
+        </div>
+        <div class="pathway-grid">
+          <article class="path-card">
+            <div class="path-top">
+              <span class="level-label">Entry level</span>
+              <span class="step">01 / START</span>
+            </div>
+            <h3>IT Support Technician</h3>
+            <p class="role-alternate">Also known as Help Desk Technician</p>
+            <p>Help people use technology by diagnosing everyday hardware, software, account, and connectivity issues.</p>
+            <span class="card-label">What you’ll do</span>
+            <ul>
+              <li>Triage support requests and document solutions</li>
+              <li>Set up devices, accounts, and approved software</li>
+              <li>Resolve common desktop and network problems</li>
+            </ul>
+            <div class="path-footer"><strong>Build toward:</strong> customer service, troubleshooting, Windows or Linux basics, and networking fundamentals.</div>
+          </article>
+          <article class="path-card">
+            <div class="path-top">
+              <span class="level-label intermediate">Intermediate</span>
+              <span class="step">02 / GROW</span>
+            </div>
+            <h3>System Administrator</h3>
+            <p class="role-alternate">A natural next step from frontline support</p>
+            <p>Operate and maintain the servers, services, user accounts, and infrastructure that an organization relies on.</p>
+            <span class="card-label">What you’ll do</span>
+            <ul>
+              <li>Manage servers, access, updates, and backups</li>
+              <li>Monitor service health and investigate incidents</li>
+              <li>Automate repeatable maintenance tasks</li>
+            </ul>
+            <div class="path-footer"><strong>Build toward:</strong> deeper OS administration, scripting, identity management, security, and cloud basics.</div>
+          </article>
+          <article class="path-card">
+            <div class="path-top">
+              <span class="level-label advanced">Advanced</span>
+              <span class="step">03 / LEAD</span>
+            </div>
+            <h3>Systems Engineer</h3>
+            <p class="role-alternate">Or Senior Administrator / Infrastructure Manager</p>
+            <p>Design, improve, and guide the systems and infrastructure behind complex, organization-wide services.</p>
+            <span class="card-label">What you’ll do</span>
+            <ul>
+              <li>Plan scalable, resilient infrastructure changes</li>
+              <li>Lead complex incidents and technical projects</li>
+              <li>Set standards and mentor other IT professionals</li>
+            </ul>
+            <div class="path-footer"><strong>Build toward:</strong> architecture, cloud and automation, risk management, communication, and technical leadership.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Skills &amp; qualifications</p>
+            <h2 class="section-heading">A strong foundation for <span>solving the next problem.</span></h2>
+          </div>
+          <p class="section-description">You don’t have to master everything on day one. These fundamentals make you more effective at each career stage.</p>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">01</span>
+            <h3>Operating systems</h3>
+            <p>Learn Windows and Linux accounts, permissions, updates, services, and logs to manage the environments organizations run.</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">02</span>
+            <h3>Networking</h3>
+            <p>Understand IP addressing, DNS, DHCP, routing, and firewalls so you can trace how devices and services connect.</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">03</span>
+            <h3>Troubleshooting</h3>
+            <p>Use a calm, repeatable process to gather evidence, identify root causes, restore service, and document what happened.</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">04</span>
+            <h3>Security fundamentals</h3>
+            <p>Apply least privilege, patching, multi-factor authentication, and safe backup practices to reduce avoidable risk.</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon" aria-hidden="true">05</span>
+            <h3>Scripting &amp; automation</h3>
+            <p>Use PowerShell or Bash to standardize routine tasks, reduce manual errors, and make repeatable work faster.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roles-section" id="roles">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Job roles &amp; responsibilities</p>
+            <h2 class="section-heading">Different roles. <span>Different perspectives.</span></h2>
+          </div>
+          <p class="section-description">Support keeps users moving; administrators keep services healthy; engineers plan how those services evolve.</p>
+        </div>
+        <div class="role-table-wrap" role="region" aria-label="Comparison of system administration career roles" tabindex="0">
+          <table class="role-table">
+            <thead>
+              <tr>
+                <th scope="col">Role</th>
+                <th scope="col">Primary focus</th>
+                <th scope="col">Typical responsibilities</th>
+                <th scope="col">Scope</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>IT Support Technician</td>
+                <td>Helping individual users</td>
+                <td>Answer requests, troubleshoot workstations, set up accounts and devices, and escalate complex issues.</td>
+                <td>Day-to-day user and endpoint support</td>
+              </tr>
+              <tr>
+                <td>System Administrator</td>
+                <td>Keeping IT services reliable</td>
+                <td>Maintain servers and access, monitor services, apply updates, manage backups, and respond to incidents.</td>
+                <td>Shared systems across teams</td>
+              </tr>
+              <tr>
+                <td>Systems Engineer</td>
+                <td>Designing what comes next</td>
+                <td>Architect infrastructure, plan migrations, improve automation and resilience, and guide technical projects.</td>
+                <td>Organization-wide systems and future growth</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tools-section" id="tools">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Required skills &amp; tools</p>
+            <h2 class="section-heading">Practice the work. <span>Get comfortable with the tools.</span></h2>
+          </div>
+          <p class="section-description">Real environments vary. Start with widely used foundations and practice safely in a home lab or learning environment.</p>
+        </div>
+        <div class="tools-layout">
+          <article class="tool-panel">
+            <div class="panel-heading">
+              <span class="panel-heading-icon" aria-hidden="true">↗</span>
+              <h3>Skills worth building</h3>
+            </div>
+            <div class="list-items">
+              <div class="list-item">
+                <span class="list-number">01</span>
+                <div><h4>Clear communication</h4><p>Explain technical issues in plain language, set expectations, and keep useful notes.</p></div>
+              </div>
+              <div class="list-item">
+                <span class="list-number">02</span>
+                <div><h4>Analytical troubleshooting</h4><p>Check evidence systematically instead of guessing, and learn from the result.</p></div>
+              </div>
+              <div class="list-item">
+                <span class="list-number">03</span>
+                <div><h4>Identity and access basics</h4><p>Understand accounts, groups, permissions, and why least-privilege access matters.</p></div>
+              </div>
+              <div class="list-item">
+                <span class="list-number">04</span>
+                <div><h4>Backup and recovery</h4><p>Know how backups are checked and how recovery helps services bounce back.</p></div>
+              </div>
+              <div class="list-item">
+                <span class="list-number">05</span>
+                <div><h4>Documentation and teamwork</h4><p>Record changes and solutions so teammates can work safely and consistently.</p></div>
+              </div>
+            </div>
+          </article>
+          <article class="tool-panel">
+            <div class="panel-heading">
+              <span class="panel-heading-icon" aria-hidden="true">&lt;/&gt;</span>
+              <h3>Tools &amp; technologies</h3>
+            </div>
+            <div class="list-items">
+              <div class="list-item">
+                <span class="list-number">01</span>
+                <div><h4>Linux &amp; Windows Server</h4><p>Common server operating systems for managing services, users, and workloads.</p></div>
+              </div>
+              <div class="list-item">
+                <span class="list-number">02</span>
+                <div><h4>PowerShell &amp; Bash</h4><p>Command-line shells for administration, automation, and inspecting system behavior.</p></div>
+              </div>
+              <div class="list-item">
+                <span class="list-number">03</span>
+                <div><h4>Active Directory / Microsoft Entra ID</h4><p>Identity platforms for organizing users, controlling access, and managing sign-in.</p></div>
+              </div>
+              <div class="list-item">
+                <span class="list-number">04</span>
+                <div><h4>VirtualBox or Hyper-V</h4><p>Run isolated virtual machines to practice configurations without changing your main computer.</p></div>
+              </div>
+              <div class="list-item">
+                <span class="list-number">05</span>
+                <div><h4>Git</h4><p>Track script and configuration changes so you can review and share your work.</p></div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="resource-strip" aria-label="Official learning resources">
+          <strong>Explore official learning resources</strong>
+          <a href="https://learn.microsoft.com/training/" target="_blank" rel="noopener noreferrer">Microsoft Learn ↗</a>
+          <a href="https://www.netacad.com/" target="_blank" rel="noopener noreferrer">Cisco Networking Academy ↗</a>
+          <a href="https://www.redhat.com/en/services/training-and-certification" target="_blank" rel="noopener noreferrer">Red Hat training ↗</a>
+          <a href="https://ubuntu.com/tutorials" target="_blank" rel="noopener noreferrer">Ubuntu tutorials ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-card">
+          <div>
+            <p class="eyebrow">About the developer</p>
+            <h2 class="about-heading">Curious about the systems behind the screen.</h2>
+            <p class="about-intro">I’m an aspiring IT professional interested in how reliable, secure infrastructure helps people do their best work. This portfolio shares the career path I’m exploring and the skills I’m working to build.</p>
+          </div>
+          <div class="about-details">
+            <div class="about-detail">
+              <span>Name</span>
+              <strong>[Add your name]</strong>
+            </div>
+            <div class="about-detail">
+              <span>Course / program</span>
+              <strong>[Add your course or program]</strong>
+            </div>
+            <div class="about-detail">
+              <span>Preferred IT career</span>
+              <strong>System Administrator</strong>
+            </div>
+            <div class="about-detail">
+              <span>Professional goal</span>
+              <strong>Grow into a skilled, security-minded systems professional</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3.5" y="4.5" width="17" height="6" rx="1.8"></rect>
+            <rect x="3.5" y="13.5" width="17" height="6" rx="1.8"></rect>
+            <path d="M7.5 7.5h.01M7.5 16.5h.01M11 7.5h6M11 16.5h6"></path>
+          </svg>
+        </span>
+        Career Pathways
+      </a>
+      <p>Career exploration, one step at a time.</p>
+      <p>© <span id="year">2026</span> System Administration Career Portfolio</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector("#site-navigation");
+
+    menuButton.addEventListener("click", () => {
+      const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isExpanded));
+      menuButton.setAttribute("aria-label", isExpanded ? "Open navigation menu" : "Close navigation menu");
+      navigation.classList.toggle("is-open", !isExpanded);
+    });
+
+    navigation.addEventListener("click", (event) => {
+      if (event.target instanceof HTMLAnchorElement) {
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+        navigation.classList.remove("is-open");
+      }
+    });
+
+    document.querySelector("#year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
